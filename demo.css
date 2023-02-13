@@ -1,51 +1,81 @@
 header {
-    background: url(images/central_park.jpg) 0 -200px no-repeat;  /* place image as background */
-    background-size: 1500px;
-    /*background-position: 0 -200px;*/
-    /*background-repeat: no-repeat;*/
-    height: 400px; /* give header some height to display the background image */
-    padding-top: 100px;
-    padding-left: 100px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+  background: url(images/central_park.jpg) 0 -200px no-repeat; /* place image as background */
+  background-size: 1500px;
+  /*background-position: 0 -200px;*/
+  /*background-repeat: no-repeat;*/
+  height: 400px; /* give header some height to display the background image */
+  padding-top: 100px;
+  padding-left: 100px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+li {
+  list-style-type: none;
+  display: inline;
+  padding: 0 20px;
+}
+li a {
+  text-decoration: none; /* Remove Underline */
+}
+li a:link {
+  color: #000; /* Before Click */
+}
+li a:visited {
+  color: #818db3; /* After Click */
+}
+li a:hover {
+  color: #333; /* Mouse Over */
+}
+li a:active {
+  color: #753a30; /* Mouse Down */
+}
+nav {
+  background-color: rgb(255, 245, 238);
+  height: 50px;
+  text-align: center;
+  padding-top: 2px;
+}
+main {
+  width: 100%;
+  margin: 50px;
+}
+main h1 {
+  color: rgb(129, 141, 179);
+  font-family: arial;
+}
+
+footer {
+  height: 40px;
+  background-color: rgb(129, 141, 179);
+  text-align: center;
+  padding-top: 20px;
+  color: rgb(211, 218, 240);
+}
+
+@media only screen and (max-width: 599px) {
+  body {
+    margin: 30px 30px 30px 30px;
   }
-  li {
-    list-style-type: none;
-    display: inline;
-    padding: 0 20px;
+  main img {
+    padding-top: 30px;
+    width: 350px;
   }
-  li a {
-    text-decoration: none; /* Remove Underline */
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    margin: 30px 30px 30px 30px;
   }
-  li a:link {
-    color: #000; /* Before Click */
-  }
-  li a:visited {
-    color:#818db3; /* After Click */
-  }
-  li a:hover {
-    color:#333; /* Mouse Over */
-  }
-  li a:active {
-    color:#753a30; /* Mouse Down */
-  }
-  nav {
-    background-color:rgb(255, 245, 238);
-    height: 50px;
-    text-align: center;
-    padding-top: 2px;
+  header img {
+    width: 100%;
+    height: auto;
   }
   main {
-    margin: 50px;
+    width: 100%;
+    align-items: center;
+    display: inline-flex;
   }
-  main h1 {
-    color:rgb(129, 141, 179);
-    font-family: arial;
+  main image {
+    padding-right: 50px;
   }
-  footer {
-    height: 40px;
-    background-color:rgb(129, 141, 179);
-    text-align: center;
-    padding-top: 20px;
-    color:rgb(211, 218, 240);
-  }
+}
